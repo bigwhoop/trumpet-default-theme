@@ -91,7 +91,7 @@
     font-family    : 'Open Sans', Arial, sans-serif;
     color          : #111;
     text-shadow    : 0 1px 1px rgba(0, 0, 0, .1);
-    font-size      : 2.2vw;
+    font-size      : 1.8vw;
     line-height    : 120%;
     letter-spacing : -0.1vw;
 }
@@ -142,7 +142,7 @@
 .presenters .presenter .contact-info { font-size: 1.5vw; line-height: 130%; }
 
 h1 {
-    font-size      : 6vw;
+    font-size      : 5vw;
     line-height    : 100%;
     margin-top     : 10vw;
     font-weight    : 600;
@@ -151,7 +151,7 @@ h1 {
 }
 
 h2 {
-    font-size      : 4vw;
+    font-size      : 3vw;
     line-height    : 110%;
     margin         : 0 0 2vw 0;
     font-weight    : 600;
@@ -160,11 +160,19 @@ h2 {
 }
     
 h3 {
-    font-size      : 2.8vw;
+    font-size      : 2vw;
     line-height    : 120%;
     margin         : 2vw 0 1vw 0;
     font-weight    : 600;
     letter-spacing : -0.1vw;
+    color          : rgb(51, 51, 51);
+}
+
+h4 {
+    font-size      : 1.5vw;
+    line-height    : 120%;
+    margin         : 1.5vw 0 1vw 0;
+    font-weight    : 600;
     color          : rgb(51, 51, 51);
 }
 
@@ -192,6 +200,14 @@ p:first-child {
 
 ul {
     margin-left: 3vw;
+}
+
+img {
+    outline: none;
+    max-width: 100%;
+    overflow: hidden;
+    width: auto;
+    height: auto;
 }
 
 pre, code {
@@ -264,4 +280,11 @@ figcaption {
     -o-border-radius      : 10px;
     -moz-border-radius    : 10px;
     -webkit-border-radius : 10px;
+}
+
+blockquote {
+    margin : 1.5vw 0 1.5vw 2vw;
+    padding-left: 1vw;
+    border-left: .5vw solid #aaa;
+    font-size: .75em;
 }

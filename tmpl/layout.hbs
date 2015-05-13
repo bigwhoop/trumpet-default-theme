@@ -2,17 +2,17 @@
 <html lang="{{#default language 'en'}}">
 <head>
     <meta charset="UTF-8">
-    <title>{{title}} by {{#join ', ' authors}}{{name}}{{/join}}</title>
+    <title>{{title}} by {{#join ', ' presenters}}{{name}}{{/join}}</title>
     
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|Droid+Sans+Mono">
     <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     
     <link rel="stylesheet" type="text/css" href="/css/styles.css">
     
-    {{#if themeSettings.bg}}
+    {{#if theme_settings.bg}}
         <style type="text/css">
             .slides > article:first-of-type {
-                background-image: url('/{{themeSettings.bg}}');
+                background-image: url('/{{theme_settings.bg}}');
             }
         </style>
     {{/if}}
@@ -24,7 +24,7 @@
             <h2>{{subtitle}}</h2>
             <div class="date">{{date}}</div>
             <div class="presenters">
-                {{#each authors}}
+                {{#each presenters}}
                     <div class="presenter">
                         <p class="name">{{name}}</p>
                         <p class="company">{{company}}</p>
